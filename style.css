@@ -1,0 +1,425 @@
+/* RESET & BASE STYLES */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fc;
+  color: #1a1a1a;
+}
+
+/* === TOP STRIP === */
+.top-strip {
+  background-color: #265073;
+  color: #fff;
+  padding: 6px 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* === HEADER === */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.contact-left p,
+.contact-right p {
+  margin: 2px 0;
+  font-size: 14px;
+}
+
+.contact-left h3 {
+  color: #265073;
+  margin: 0;
+}
+
+.contact-right a {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.logo img {
+  max-height: 60px;
+}
+
+/* === NAVIGATION === */
+.navbar {
+  background-color: #14233c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  flex-wrap: wrap;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.cta-btn {
+  background-color: #ffffff;
+  color: #14233c;
+  font-weight: bold;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* === HERO SECTION === */
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 30px;
+  background-color: #e2e8f0;
+  align-items: center;
+}
+
+.hero-left img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.hero-right {
+  flex: 1;
+  padding-left: 40px;
+  max-width: 700px;
+}
+
+.hero-right h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: #14233c;
+  margin-bottom: 20px;
+}
+
+.hero-right p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.hero-contact-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #14233c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* === LAW CATEGORIES === */
+.law-categories {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+.law-card {
+  width: 22%;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 15px 0;
+  text-align: left;
+  border: 1px solid #e1e1e1;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.icon {
+  font-size: 32px;
+  color: #265073;
+  margin-bottom: 10px;
+}
+
+.category-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #666;
+}
+
+.category-subtitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: #14233c;
+  margin-bottom: 15px;
+}
+
+.law-card p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #14233c;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #1b2d49;
+}
+
+/* === ABOUT & VALUES === */
+.section-container {
+  display: flex;
+  padding: 40px 60px;
+  gap: 40px;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+}
+
+.about-section,
+.values-section {
+  flex: 1 1 45%;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #14233c;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  border-top: 3px solid #265073;
+  margin-top: 8px;
+}
+
+.about-text,
+.consult-text {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.service-cards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  flex: 1;
+  background-color: #14233c;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.consult-title {
+  color: #265073;
+  font-size: 22px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #265073;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+/* === VALUES BOXES === */
+.value-box {
+  display: flex;
+  margin-bottom: 25px;
+  align-items: flex-start;
+}
+
+.tag {
+  background-color: #265073;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-right: 15px;
+  font-size: 16px;
+}
+
+.value-content h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.value-content p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.image-cards {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.image-cards img {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* === TESTIMONIALS === */
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.testimonial-left {
+  background-color: #14233c;
+  color: #fff;
+  flex: 1;
+  padding: 60px;
+}
+
+.testimonial-right {
+  flex: 1;
+  padding: 60px;
+  background-color: #f4f6fb;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.icon-circle {
+  background-color: #265073;
+  color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === CONSULTATION FORM === */
+.consultation-section {
+  background: url('background.jpg') no-repeat center center/cover;
+  padding: 60px 40px;
+}
+
+.consultation-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.consultation-form-container {
+  flex: 2 1 600px;
+  padding: 0 30px;
+}
+
+.consultation-form input,
+.consultation-form select,
+.consultation-form textarea {
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+  width: 100%;
+}
+
+.consultation-form button {
+  background-color: #14233c;
+  color: white;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px;
+  margin-top: 10px;
+}
+
+/* === FOOTER === */
+.footer-section {
+  background-color: #0e0e0e;
+  color: #ccc;
+  padding: 60px 40px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-column h3,
+.footer-column h4 {
+  color: #fff;
+}
+
+.footer-divider {
+  width: 60px;
+  border-top: 3px solid #265073;
+  margin-bottom: 20px;
+}
+
+.footer-links a:hover,
+.social-icons a:hover {
+  color: #fff;
+  background-color: #265073;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 960px) {
+  .section-container,
+  .testimonial-container,
+  .consultation-container,
+  .footer-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .consultation-form button {
+    align-self: center;
+  }
+
+  .law-card {
+    width: 100%;
+  }
+}
